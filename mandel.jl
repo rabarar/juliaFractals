@@ -48,9 +48,8 @@ function float_range(xmin, xmax, width)
 
 	delta = abs(xmax - xmin)/(width - 1)
 
-	start = xmin
 	for i = 1:width
-		r[i] = start + (i-1)*delta
+		r[i] = xmin + (i-1)*delta
 	end
 
 	return r
